@@ -1,0 +1,86 @@
+{
+  "name": "ngx-ndbx-backstage-template",
+  "version": "0.0.0",
+  "brand": "Allianz",
+  "title": "Kaiser X Labs Angular NDBX Template",
+  "author": "Kaiser X Labs Developers <support@kxlabs.io>",
+  "provider": "https://kaiser-x.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.developer.allianz.io/KaiserXLabs/ngx-ndbx-template.git"
+  },
+  "bugs": {
+    "url": "https://github.developer.allianz.io/KaiserXLabs/ngx-ndbx-template/issues"
+  },
+  "contributors": [
+    "Thomas Ott <thomas.ott@kaiser-x.com>"
+  ],
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "format": "prettier \"**/*.{js,md,scss,ts,html,json}\" --write",
+    "release": "standard-version"
+  },
+  "private": true,
+  "prettier": "@kxl/prettier-config",
+  "dependencies": {
+    "@allianz/ngx-ndbx": "^10.5.0",
+    "@angular/animations": "~10.2.3",
+    "@angular/cdk": "^10.2.7",
+    "@angular/common": "~10.2.3",
+    "@angular/compiler": "~10.2.3",
+    "@angular/core": "~10.2.3",
+    "@angular/forms": "~10.2.3",
+    "@angular/platform-browser": "~10.2.3",
+    "@angular/platform-browser-dynamic": "~10.2.3",
+    "@angular/router": "~10.2.3",
+    "@aposin/ng-aquila": "~10.5.0",
+    "@kxl/power-log": "^2.0.0-alpha.0",
+    "css-vars-ponyfill": "^2.4.2",
+    "iban": "0.0.14",
+    "moment": "^2.22.2",
+    "object-fit-images": "^3.2.3",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.0.0",
+    "what-input": "^5.1.2",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1002.0",
+    "@angular/cli": "~10.2.0",
+    "@angular/compiler-cli": "~10.2.3",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-angular": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@kxl/prettier-config": "^1.0.0",
+    "@types/jasmine": "~3.5.0",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^6.0.0",
+    "husky": "^4.3.0",
+    "jasmine-core": "~3.6.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~5.0.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~3.0.2",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "lint-staged": "^10.5.2",
+    "protractor": "~7.0.0",
+    "standard-version": "^9.0.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "^3.9.6"
+  },
+  "lint-staged": {
+    "*.js": "prettier --write",
+    "*.json": "prettier --write",
+    "*.html": "prettier --write",
+    "*.scss": "prettier --write",
+    "*.ts": "tslint"
+  }
+}

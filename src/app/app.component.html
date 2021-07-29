@@ -1,0 +1,30 @@
+<header nx-header>
+  <nx-header-brand>
+    <nx-link>
+      <a href="#">
+        <figure nxFigure>
+          <img src="assets/allianz_logo_with_name.svg" alt="Allianz Brand Logo" role="none" />
+        </figure>
+      </a>
+    </nx-link>
+  </nx-header-brand>
+
+  <nx-header-navigation>
+    <nx-header-navigation-item>
+      <a
+        routerLink="./"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="is-active"
+        [skipLocationChange]="true"
+        nxHeaderLink
+        >Link</a
+      >
+    </nx-header-navigation-item>
+  </nx-header-navigation>
+
+  <nx-header-actions>
+    <button nxButton="secondary small" class="login-button" type="button">
+      Login
+    </button>
+  </nx-header-actions>
+</header>
